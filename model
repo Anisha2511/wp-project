@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Learn about robotics, types of robots, and the future of automation.">
+    <meta name="keywords" content="Robotics, Future of Automation, Robots, AI, Industrial Robots, Service Robots">
+    <title>Robotics - The Future of Automation</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f1f1f1;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        /* Header Section */
+        header {
+            background: linear-gradient(135deg, #4e73df, #1cc88a);
+            color: #fff;
+            text-align: center;
+            padding: 50px 20px;
+            opacity: 0;
+            animation: fadeIn 2s forwards;
+        }
+
+        header h1 {
+            font-size: 3rem;
+            margin-bottom: 10px;
+            animation: slideUp 1s ease-in-out 0.5s forwards;
+        }
+
+        header p {
+            font-size: 1.2rem;
+            animation: slideUp 1s ease-in-out 1s forwards;
+        }
+
+        /* Navigation Bar */
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #333;
+            padding: 10px 0;
+            opacity: 0;
+            animation: fadeIn 2s forwards 1.5s;
+        }
+
+        nav a {
+            color: white;
+            padding: 14px 30px;
+            text-decoration: none;
+            text-align: center;
+            font-weight: bold;
+            transition: background 0.3s;
+            opacity: 0;
+            animation: fadeInLinks 1s forwards;
+        }
+
+        nav a:hover {
+            background-color: #575757;
+        }
+
+        nav a:nth-child(1) {
+            animation-delay: 2s;
+        }
+        nav a:nth-child(2) {
+            animation-delay: 2.2s;
+        }
+        nav a:nth-child(3) {
+            animation-delay: 2.4s;
+        }
+
+        /* Section Style */
+        section {
+            padding: 40px 20px;
+            margin: 20px auto;
+            max-width: 1200px;
+            opacity: 0;
+            animation: fadeIn 2s forwards;
+        }
+
+        section h2 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            text-align: center;
+            color: #333;
+            opacity: 0;
+            animation: fadeIn 1.5s forwards 0.5s;
+        }
+
+        section p {
+            font-size: 1.1rem;
+            margin-bottom: 20px;
+            text-align: justify;
+            line-height: 1.8;
+        }
+
+        /* Robot Images */
+        .robot-image {
+            width: 100%;
+            height: auto;
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            opacity: 0;
+            animation: fadeIn 2s forwards 1.5s;
+        }
+
+        /* Content Section */
+        .content {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 30px;
+        }
+
+        .content div {
+            width: 48%;
+        }
+
+        .content img {
+            width: 100%;
+            border-radius: 15px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            opacity: 0;
+            animation: fadeIn 2s forwards 2s;
+        }
+
+        /* Footer Style */
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+            opacity: 0;
+            animation: fadeIn 2s forwards 2.5s;
+        }
+
+        footer p {
+            font-size: 1rem;
+        }
+
+        /* Media Queries for Responsiveness */
+        @media (max-width: 768px) {
+            .content {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .content div {
+                width: 100%;
+            }
+
+            nav {
+                flex-direction: column;
+            }
+
+            nav a {
+                padding: 12px 20px;
+                font-size: 1.1rem;
+            }
+        }
+
+        /* Keyframe Animations */
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+
+        @keyframes slideUp {
+            0% {
+                transform: translateY(50px);
+                opacity: 0;
+            }
+            100% {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        @keyframes fadeInLinks {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Welcome to Robotics</h1>
+    <p>The Future of Automation</p>
+</header>
+
+<nav>
+    <a href="#intro">Introduction</a>
+    <a href="#types">Types of Robots</a>
+    <a href="#future">The Future of Robotics</a>
+</nav>
+
+<section id="intro">
+    <h2>What is Robotics?</h2>
+    <p>Robotics is a branch of engineering that deals with the design, construction, operation, and use of robots. Robots are machines designed to carry out tasks autonomously or semi-autonomously. With rapid advancements in technology, robotics is transforming industries ranging from manufacturing to healthcare.</p>
+    <p>For more on robotics, check out these great resources:
+        <ul>
+            <li><a href="https://www.robotics.org" target="_blank">Robotics Online</a> - Robotics industry association.</li>
+            <li><a href="https://www.irobot.com" target="_blank">iRobot</a> - Learn about consumer robotics.</li>
+            <li><a href="https://www.robotshop.com" target="_blank">RobotShop</a> - A marketplace for robotics enthusiasts.</li>
+        </ul>
+    </p>
+    <img class="robot-image" src="https://www.liebherr.com/shared/media/gear-technology-and-automation/images/trade-fairs/emo-2023/liebherr-emo-2023-automation-e-mobility-content.jpg" alt="Robot working in a factory">
+</section>
+
+<section id="types">
+    <h2>Types of Robots</h2>
+    <div class="content">
+        <div>
+            <h3>Industrial Robots</h3>
+            <p>Industrial robots are used primarily in manufacturing industries. They are highly precise and efficient, performing tasks such as assembly, welding, and material handling with minimal human intervention.</p>
+            <p>To learn more about industrial robots, visit: <a href="https://www.mhi.org/robotics" target="_blank">Robotics Industry Association</a></p>
+            <img src="https://substackcdn.com/image/fetch/f_auto,q_auto:good,fl_progressive:steep/https://bucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com/public/images/9a14b571-61f7-4f63-aa9c-7aafef9937c8_1524x1446.png" alt="Industrial Robot in operation">
+        </div>
+        <div>
+            <h3>Service Robots</h3>
+            <p>Service robots assist humans in various sectors like healthcare, hospitality, and customer service. These robots are designed to improve service quality, efficiency, and safety in environments where human assistance is limited or unavailable.</p>
+            <p>For more information on service robots, check out: <a href="https://www.servicerobotics.eu" target="_blank">Service Robotics</a></p>
+            <img src="https://png.pngtree.com/background/20230410/original/pngtree-robot-blue-light-technology-artificial-intelligence-future-robot-picture-image_2380622.jpg" alt="Service robot in action">
+        </div>
+    </div>
+</section>
+
+<section id="future">
+    <h2>The Future of Robotics</h2>
+    <p>The future of robotics holds exciting potential. Advances in AI, machine learning, and autonomous systems promise to revolutionize industries. In the future, we can expect robots that are even more versatile and capable of handling complex tasks such as autonomous driving, medical surgery, and disaster response.</p>
+    <p>For a glimpse into the future of robotics, visit: <a href="https://www.roboticsbusinessreview.com" target="_blank">Robotics Business Review</a></p>
+    <img class="robot-image" src="https://www.simplilearn.com/ice9/free_resources_article_thumb/The_Future_of_Robotics.jpg" alt="Future robot design">
+</section>
+
+<footer>
+    <p>&copy; 2025 Robotics Inc. All rights reserved. <br> Powered by <a href="https://www.openai.com" target="_blank" style="color: #fff;">OpenAI</a></p>
+</footer>
+
+</body>
+</html>
